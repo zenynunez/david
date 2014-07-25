@@ -1,0 +1,112 @@
+ body{
+	background: url();
+	background-size:cover; 
+}
+
+/*== Type ==*/
+a{
+	text-decoration:none;
+	color:#02bfed;
+}
+
+/*=== Background CSS ==*/
+.wrapper {
+  zoom: 1;
+  max-width: 80em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffff57; 
+ }
+ .wrapper:before, .wrapper:after {
+    content: " ";
+    display: table; 
+}
+.wrapper:after {
+    clear: both
+}
+/*== Nav bar ==*/
+
+#menu {
+	width: 215px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	height: 100%;
+	background-color:#ffff57;
+}
+.nav{
+	max-width:100%;
+	width:200px;
+	height:100%;
+	background-color:#ffff57;
+	padding-top:25px;
+	left:0px;
+	position:absolute;
+}
+
+.logo{
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	padding:10px;
+	margin:0 25px 25px 25px;
+	left:0px;
+}
+.links{
+	max-width:100%;
+	width:145px;
+	height:100px;
+	background-color:#ffff57;
+	padding:10px;
+	margin:0 0 0 27px;
+	left:0px;
+	text-decoration:none;
+	line-height: 25px;
+}
+
+
+/*== Image and Video ==*/
+.imageplace{
+	max-width:62.500em;
+	width:100%;
+	background-color:#ffff57;
+	right: 80px;
+	padding-bottom: 20px;
+	margin: 20px 20px 20px 220px;
+	overflow:hidden;
+}
+
+.bottom{
+	width:100%;
+	height:100%;
+	padding-bottom:20px;
+}
+
+/*== Media Queries ==*/
+@media only screen and (min-width: 481px) and (max-width: 740px){
+	#menu{ width:100%; position:relative;}
+	.nav { width:100%; position:inherit;}
+	.logo{ width:20%; height:20%; background-position:center; margin-left:150px; margin-top:0;}
+	.bottom{ width:100%; height:100%; top:100px;}
+	img{width:100%; height:50%;}
+	.imageplace{ width:75%; height:100%; margin-left:85px; margin-top:15px;}
+	.links{ text-align:center; width:100%; height:100%; margin:0 0 auto;}
+	a{ text-align:center;}
+
+}
+	
+
+/*-- Mobile --*/
+@media only screen and (min-width: 0px) and (max-width: 480px){
+	#menu{ width:100%; position:relative;}
+	.nav { width:100%; position:inherit;}
+	.logo{ width:20%; height:20%; background-position:center; margin-left:150px; margin-top:0;}
+	.bottom{ width:100%; height:50%; top:100px;}
+	img{width:100%; height:50%;}
+	.imageplace{ width:100%; height:100%; margin: 0 0 auto; margin-top:15px;}
+	.links{ text-align:center; width:100%; height:100%; margin:0 0 auto;}
+	a{ text-align:center;}
+
+}
+

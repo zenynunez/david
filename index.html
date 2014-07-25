@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<title>esm</title>
+	<link rel="stylesheet" href="css/reset.css" type="text/css" />
+	<link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
+  <meta name="description" content="Estudio Esm- Diseño, tripas y rocanról" />
+<link rel="stylesheet" href="normalize.css" />
+
+  <script type="text/javascript">
+  
+   var logoArray  = [ "img/logo03.png", "img/logo02.png", "img/logo03.png"];
+   var bgArray    = [ "<img/bg01.jpg", "img/bg02.jpg", "img/bg03.jpg"];
+
+   
+
+   function loadRandomImage() {
+    var randomLogo = Math.floor( Math.random() * logoArray.length );
+    var randomBg = Math.floor( Math.random() * logoArray.length );
+
+    document.getElementsByClassName("logo")[0].style.background = 'url(' + logoArray[randomLogo] + ')';
+    document.body.style.background = 'url(' + bgArray[randomBg] + ')';
+   }
+
+  </script>
+</head>
+
+<body onload="loadRandomImage()">
+
+    <div class="wrapper">
+      <div id="menu">
+      	<div class="nav">
+          	<a href="#" class="logo"> <Figure id="logo01.png"> </a>
+            <div class="links">
+             <ul>
+           <li> <a href="#">Manifiesto</li>
+           <li> <a href="#">Posters</li>
+           <li> <a href="#">Identity </li>
+           <li> <a href="#">Motion</li>
+           <li> <a href="#">Art</li>
+           <li> <a href="#">Allies</li>
+           <li> <a href="#">Contact </li>
+        </ul> 
+            </div> 
+         </div>
+      </div>
+           
+      <div class="imageplace">
+            <div class="bottom">
+                <img src="img/img01.jpg" alt="Image 1">
+           </div>
+           <div class="bottom">
+                <img src="img/img02.jpg" alt="Image 2">
+           </div>
+           <div class="bottom">
+                <img src="img/img03.jpg" alt="Image 3">
+           </div>
+      </div>
+
+    </div>
+
+</body>
+</html>
