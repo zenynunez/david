@@ -1,54 +1,77 @@
-<!doctype html>
-<html>
-<head>
-<title>esm</title>
-	<link rel="stylesheet" href="css/reset.css" type="text/css" />
-	<link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
-
-  <script type="text/javascript">
-  
-   var logoArray  = [ "img/logo01.png", "img/logo02.png", "img/logo03.png "];
-   var bgArray    = [ "img/bg01.jpg", "img/bg02.jpg", "img/bg03.jpg"];
-
-   console.log("Logo: " + logoArray[1] + ", bg: " + bgArray[1]);
-
-   function loadRandomImage() {
-    var randomLogo = Math.floor( Math.random() * logoArray.length );
-    var randomBg = Math.floor( Math.random() * logoArray.length );
-
-    document.getElementsByClassName("logo")[0].style.background = 'url(' + logoArray[randomLogo] + ')';
-    document.body.style.background = 'url(' + bgArray[randomBg] + ')';
-   }
-
-  </script>
-</head>
-
-<body onload="loadRandomImage()">
-
-    <div class="wrapper">
-      <div id="menu">
-      	<div class="nav">
-          	<a href="ww.ems.com" class="logo"></a>
-            <div class="links"> 
-             	<a href="#">Here goes the nav <br /></a>
-             	<a href="#"> Here goes the nav<br /></a>
-            </div> 
-         </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Dashboard with Off-canvas Sidebar</title>
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="hidden-lg navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+        </div>
       </div>
-           
-      <div class="imageplace">
-            <div class="bottom">
-                <img src="img/img01.jpg" alt="Image 1">
-           </div>
-           <div class="bottom">
-                <img src="img/img02.jpg" alt="Image 2">
-           </div>
-           <div class="bottom">
-                <img src="img/img03.jpg" alt="Image 3">
-           </div>
+    </nav>
+    <div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-sm-3 col-md-2 sidebar-offcanvas" id="sidebar" role="navigation">
+        <div class="row">
+          <img class="img-responsive" src="images/logo00.png">
+        </div>
+        <ul class="nav nav-sidebar">
+          <li><a class="page" href="">Manifiesto</a></li>
+          <li><a lass="page" href="">Posters</a></li>
+          <li><a lass="page" href="">Identity</a></li>
+          <li><a lass="page" href="">Motion</a></li>
+          <li><a lass="page" href="">Art</a></li>
+          <li><a lass="page" href="">Allies</a></li>
+          <li><a lass="page" href="">Contact</a></li>
+        </ul>
       </div>
-
+      <!--/span-->
+      <div class="col-sm-8 col-md-10 main">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 manifiesto">
+              <p>I sold my soul to rock&roll, and now I make art for it. 
+                everything I do, I do it with gut and heart
+                I make posters, record art, logotypes, t shirts, stickers, sandwiches, spoons to shoot heroin and fake Mötley Crew tickets for shows in the eighties (de Lorean not included) 
+                rocanról.
+              </p>
+              <img class="img-responsive" src="images/poster_1.png">
+            </div>
+            <div class="col-sm-8 col-sm-offset-2" id="poster">
+              <p>I sold my soul to rock&roll, and now I make art for it. 
+                everything I do, I do it with gut and heart
+                I make posters, record art, logotypes, t shirts, stickers, sandwiches, spoons to shoot heroin and fake Mötley Crew tickets for shows in the eighties (de Lorean not included) 
+                rocanról.
+              </p>
+              <img class="img-responsive" src="images/img02.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-</body>
+    <!--/.container-->
+    <footer>
+      <p class="pull-right">©2014 Company</p>
+    </footer>
+    <!-- script references -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
